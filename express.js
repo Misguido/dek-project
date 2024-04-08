@@ -2,7 +2,7 @@
 
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.port || 3000;
 
 // Serve static files from 'public/bin' and 'public'
 // This makes Express look for static files in these directories (e.g., HTML, CSS, JS, images)
