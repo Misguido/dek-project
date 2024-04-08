@@ -2,7 +2,7 @@
 
 const express = require('express');
 const app = express();
-const port = process.env.port || 3000;
+const PORT =  process.env.PORT || 3000;
 
 // Serve static files from 'public/bin' and 'public'
 // This makes Express look for static files in these directories (e.g., HTML, CSS, JS, images)
@@ -14,6 +14,6 @@ app.use((req, res, next) => {
   res.status(404).send('File not found');
 });
 
-app.listen(port, () => {
-  console.log(`Server is listening on port ${port}`);
+app.listen(PORT, () => {
+  console.log(`Server is listening on port ${PORT}`);
 });
