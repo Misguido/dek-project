@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "express": "^4.19.2"
+  },
+  "scripts": {
+    "start": "express.js"
+  }
+}
